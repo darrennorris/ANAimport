@@ -11,6 +11,5 @@ Data needs to be downloaded in the text (txt) format.
 
 Must be loaded in the following sequence:
 
-library(plyr)
-
-library(tidyverse)
+</code>library(plyr)</code>
+</code>library(tidyverse)</code>

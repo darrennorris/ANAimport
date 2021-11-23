@@ -5,9 +5,9 @@ ana_import <- function(x, type, out_val = NA){
   if(type=="Vazao"){
     #Flow
     dfw <- readr::read_delim(x, ";", escape_double = FALSE, 
-                             col_types = cols(EstacaoCodigo = col_character(), 
+                             col_types = readr::cols(EstacaoCodigo = readr::col_character(), 
                                               MediaAnual = col_double()), 
-                             locale = locale(decimal_mark = ","), 
+                             locale = readr::locale(decimal_mark = ","), 
                              trim_ws = TRUE, skip = 13)
     #Unique months
     dfc1 <- plyr::ddply(dfw, .(Data), summarise, 
@@ -19,7 +19,7 @@ ana_import <- function(x, type, out_val = NA){
   if(type=="Cota"){
     #River level
     dfw <- readr::read_delim(x, ";", escape_double = FALSE, 
-                             col_types = cols(EstacaoCodigo = col_character()),
+                             col_types = readr::cols(EstacaoCodigo = readr::col_character()),
                              trim_ws = TRUE,  skip = 13)
     #Unique months
     dfc1 <- plyr::ddply(dfw, .(Data), summarise, 
@@ -31,9 +31,9 @@ ana_import <- function(x, type, out_val = NA){
   }
   if(type=="Chuva"){
     #Rain
-    dfw <- read_delim(x, ";", escape_backslash = TRUE, 
-                      col_types = cols(EstacaoCodigo = col_character()),
-                      locale = locale(decimal_mark = ","), 
+    dfw <- readr::read_delim(x, ";", escape_backslash = TRUE, 
+                      col_types = readr::cols(EstacaoCodigo = readr::col_character()),
+                      locale = readr::locale(decimal_mark = ","), 
                       trim_ws = TRUE, skip = 12) 
     #Unique months
     dfc1 <- plyr::ddply(dfw, .(Data), summarise, 

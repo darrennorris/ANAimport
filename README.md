@@ -9,7 +9,8 @@ Data needs to be downloaded in the text (txt) format.
 - <code>plyr</code>
 - <code>tidyverse</code>
 
-Must be loaded in the following sequence
+Must be loaded in the following sequence:
 
 library(plyr)
+
 library(tidyverse)

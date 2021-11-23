@@ -8,6 +8,8 @@ Data needs to be downloaded in the text (txt) format.
 ## Required R libraries
 - <code>plyr</code>
 - <code>tidyverse</code>
+
 Must be loaded in the following sequence
+
 library(plyr)
 library(tidyverse)

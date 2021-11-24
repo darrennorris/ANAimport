@@ -25,7 +25,7 @@ Must be loaded in the following sequence:
 
 `source("ana_import.R")`
 
-`#Tell R name and location of the file with rain data. Here file is in the working directory`
+`#Tell R name and location of the file with the data. Here the rain data file is in the working directory`
 
 `chmaraca <- "chuvas_T_08361007.txt"`
 

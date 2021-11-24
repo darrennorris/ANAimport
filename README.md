@@ -7,7 +7,7 @@ The function (`ana_import.R`) will work with rain (Chuva), river flow (Vazao) an
 Uses .txt file with historic weather station data. See example data file 
 <a href="https://github.com/darrennorris/ANAimport/blob/main/chuvas_T_08361007.txt"><em>chuvas_T_08361007.txt</em></a>
 ## Result
-A data.frame with daily values including useful date formats.
+A data.frame with daily values including (hopefully) useful date formats.
 
 ## Required R libraries
 - <code>plyr</code>
@@ -26,7 +26,7 @@ Must be loaded in the following sequence:
 
 `source("ana_import.R")`
 
-`#Tell R name and location of the file with the data. Here the rain data file is in the working directory`
+`#Tell R the name and location of the file with the data. Here the text file with the data is in the working directory`
 
 `chmaraca <- "chuvas_T_08361007.txt"`
 

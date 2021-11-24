@@ -19,8 +19,15 @@ Must be loaded in the following sequence:
 
 ## Example
 `library(plyr)`
+
 `library(tidyverse)`
+
 `source("ana_import.R")`
+
 `#Tell R name and location of the file with rain data. Here file is in the working directory`
+
 `chmaraca <- "chuvas_T_08361007.txt"`
+
+`#Import data`
+
 `df_rain_maraca <- ana_import(x=chmaraca, type="Chuva")`

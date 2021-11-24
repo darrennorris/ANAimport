@@ -20,7 +20,7 @@ Must be loaded in the following sequence:
 `library(tidyverse)`
 
 ## Example
-1. Search and find a weather station https://www.snirh.gov.br/hidroweb/serieshistoricas . Use the station id code to search for historical data https://www.snirh.gov.br/hidroweb/serieshistoricas .
+1. Search and find a weather station https://www.snirh.gov.br/hidroweb/mapa . Use the station id code to search for historical data https://www.snirh.gov.br/hidroweb/serieshistoricas .
 Download the data in the ".txt" format. Save the data file ("...txt"") to a folder.
 
 2. Run the following in R

@@ -6,7 +6,7 @@ The function will work with rain (Chuva), river flow (Vazao) and river level (Co
 Data needs to be downloaded in the text (.txt) format.
 
 ## Inputs
-Uses .txt file with historic weather station data.
+Uses .txt file with historic weather station data. See example data file "chuvas_T_08361007.txt".
 ## Required R libraries
 - <code>plyr</code>
 - <code>tidyverse</code>

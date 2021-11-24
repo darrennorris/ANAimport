@@ -1,5 +1,5 @@
 # ANAimport
-R code to import and tidy rainfall and river flow data from ANA weather stations across Brazil https://www.snirh.gov.br/hidroweb/mapa . Creates a data.frame with daily values including useful some date formats.
+R code to import and tidy rainfall and river flow data from ANA weather stations across Brazil https://www.snirh.gov.br/hidroweb/mapa . Creates a data.frame with daily values including some useful date formats.
 
 The function (`ana_import.R`) will work with rain (Chuva), river flow (Vazao) and river level (Cota) data downloaded from https://www.snirh.gov.br/hidroweb/serieshistoricas . Function currently works only with data downloaded in the text (.txt) format. Example data from a rain station included (file: chuvas_T_08361007.txt).
 

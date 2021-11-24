@@ -1,12 +1,13 @@
 # ANAimport
 R code to import and tidy rainfall and river flow data from ANA weather stations https://www.snirh.gov.br/hidroweb/mapa
 
-The function will work with rain (Chuva), river flow (Vazao) and river level (Cota) data downloaded from https://www.snirh.gov.br/hidroweb/serieshistoricas .
-
-Data needs to be downloaded in the text (.txt) format.
+The function will work with rain (Chuva), river flow (Vazao) and river level (Cota) data downloaded from https://www.snirh.gov.br/hidroweb/serieshistoricas . Function currently works only with data downloaded in the text (.txt) format.
 
 ## Inputs
 Uses .txt file with historic weather station data. See example data file "chuvas_T_08361007.txt".
+## Result
+Creates a data.frame with daily values including useful date formats.
+
 ## Required R libraries
 - <code>plyr</code>
 - <code>tidyverse</code>

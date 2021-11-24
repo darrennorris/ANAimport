@@ -20,16 +20,22 @@ Must be loaded in the following sequence:
 `library(tidyverse)`
 
 ## Example
+1. Search and find a weather station https://www.snirh.gov.br/hidroweb/serieshistoricas . Use the station id code to search for historical data https://www.snirh.gov.br/hidroweb/serieshistoricas .
+Download the data in the ".txt" format. Save the data file ("...txt"") to a folder.
+
+2. Run the following in R
 `library(plyr)`
 
 `library(tidyverse)`
 
+2.1 Load the function. Here a copy of the function has been downloaded and saved in the working directory
+
 `source("ana_import.R")`
 
-`#Tell R the name and location of the file with the data. Here the text file with the data is in the working directory`
+2.2 Tell R the name and location of the .txt file with the data. Here the text file with the data is in the working directory`
 
 `chmaraca <- "chuvas_T_08361007.txt"`
 
-`#Import data. Type must be specified as one of: Chuva, Vazao or Cota`
+2.3 Import data. Type must be specified as one of: Chuva, Vazao or Cota`
 
 `df_rain_maraca <- ana_import(x=chmaraca, type="Chuva")`
